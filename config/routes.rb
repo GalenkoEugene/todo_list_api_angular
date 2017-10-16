@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   apipie
-  root 'projects#index'
+  root 'binders#index'
 end

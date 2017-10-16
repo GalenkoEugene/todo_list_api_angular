@@ -5,9 +5,11 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'angular-rails-templates', '~> 1.0'
 gem 'apipie-rails', '~> 0.5'
 gem 'bower-rails', '~> 0.11'
 gem 'cancancan', '~> 2.0'
+gem 'coffee-rails', '~> 4.2'
 gem 'haml-rails', '~> 1.0'
 gem 'jbuilder', '~> 2.5'
 gem 'pg', '~> 0.21'

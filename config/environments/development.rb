@@ -4,6 +4,7 @@ Rails.application.configure do
   # Do not eager load code on boot.
   config.eager_load = false
   config.consider_all_requests_local = true
+  # config.debug_exception_response_format = :api
 
   if Rails.root.join('tmp/caching-dev.txt').exist?
     config.action_controller.perform_caching = true

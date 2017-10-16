@@ -36,3 +36,6 @@ Metrics/ModuleLength:
 
 Documentation:
   Enabled: false
+
+Style/EmptyMethod:
+  Enabled: false
