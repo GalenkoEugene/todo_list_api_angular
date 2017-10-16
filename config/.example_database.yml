@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: todo_list_api_angular_development
+
+test:
+  <<: *default
+  database: todo_list_api_angular_test
+
+production:
+  <<: *default
+  database: todo_list_api_angular_production
+  username: todo_list_api_angular
+  password: <%= ENV['TODO_LIST_API_ANGULAR_DATABASE_PASSWORD'] %>
