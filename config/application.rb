@@ -16,5 +16,9 @@ module TodoListApiAngular
       g.helper                false
       g.assets                false
     end
+
+    config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components')
+    config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components', 'bootstrap-sass-official', 'assets', 'fonts')
+    config.assets.precompile << /.*.(?:eot|svg|ttf|woff)$/
   end
 end
