@@ -1,11 +1,15 @@
 !!!
-%html
+%html{"ng-app" => "app"}
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{ content: 'width=device-width', name: 'viewport' }
     %title TodoListApiAngular
     = csrf_meta_tags
     = stylesheet_link_tag    "application", media: "all"
     = javascript_include_tag "application"
-  %body{"ng-app" => "app"}
+  %body
     = render "layouts/header"
-    = yield
+    .container
+      .view-container
+        .view-frame.animate-view{"ui-view" => ""}
+      = yield
